@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color changer</title>
+</head>
+<body style="background-color: #212121; color: #ffff;">
+    <h1>Color Changer</h1>
+    <button id="purple">purple</button>
+    <button id="brown">brown</button>
+    <button id="red">red</button>
+    <button id="orange">orange</button>
+    <button id="blue">blue</button>
+    <script>
+
+        function colorchanger(color){
+            return function (){
+              document.  body.style.backgroundColor = `${color}`
+            }
+        }
+
+
+        document.getElementById("purple").onclick = colorchanger('purple')
+        document.getElementById('brown').onclick = colorchanger('brown')
+        document.getElementById('red').onclick = colorchanger('red')
+        document.getElementById('orange').onclick = colorchanger('orange')
+        document.getElementById('blue').onclick = colorchanger('blue')
+
+    </script>
+</body>
+</html>

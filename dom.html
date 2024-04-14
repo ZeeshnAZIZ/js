@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai our code</title>
+</head>
+<body style="background-color: #212121; color:#ffff">
+    <dov class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </dov>
+</body>
+<script>
+
+   const myown= document.querySelector('.parent')
+   console.log(myown)
+   console.log(myown.children[1].innerHTML)
+   for (let i = 0; i < myown.children.length; i++) {
+    console.log(myown.children[i].innerHTML)
+   }
+   console.log(myown.firstElementChild)
+
+  const day = document.querySelector('.day')
+ console.log(day)
+ console.log(day.parentElement)
+ console.log(day.nextElementSibling)
+ console.log("Nodes: " , myown.childNodes)
+
+ myown.children[2].style.color = 'green'
+
+ myown.children[1].style.background = 'red'
+ myown.children[3].style.padding = '20px'
+
+</script>
+</html>

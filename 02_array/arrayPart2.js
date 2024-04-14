@@ -1,3 +1,4 @@
+
 const marverl_heores = ["thor","superman"]
 const dc_heores = ["spiderman","flash"]
 //marverl_heores.push(dc_heores)
@@ -17,3 +18,10 @@ console.log(real_array)
 console.log(Array.isArray("zeeshan"))
 console.log(Array.from('zeeshan'))
 //console.log(Array.from({name:"zeeshan"}))//answer is[] interesting
+
+
+
+const avangers = ['hulk' , 'ironman' , 'capAmerica']
+const avanger = ['spiderman' , 'batman' , 'flashman']
+console.log(avangers.concat(avanger));
+console.log(...avangers , ...avanger)

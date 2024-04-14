@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change color</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: black;
+        }
+        button{
+            align-items: center;
+            display: inline-flex;
+           height: 50px;
+           border-radius: 10pc;
+        }
+    </style>
+</head>
+<body>
+    <button id="grey">grey</button>
+    <button id="yellow">yellow</button>
+    <button id="red">red</button>
+    <button id="blue">blue</button>
+    <button id="orange">orange</button>
+    <button id="pink">pink</button>
+    <button id="purple">purple</button>
+    <script>
+            function changeColor(color){
+                return function (){
+                    document.body.style.backgroundColor = `${color}`
+                }
+            }
+
+            // onclick is a function 
+    const grey = document.getElementById('grey').onclick = changeColor('grey')
+    const yellow = document.getElementById('yellow').onclick = changeColor('yellow')
+    const red  = document.getElementById('red').onclick= changeColor('red')
+    const blue = document.getElementById('blue').onclick= changeColor('blue')
+    const orange = document.getElementById('orange').onclick= changeColor('orange')
+    const pink = document.getElementById('pink').onclick= changeColor('pink')
+    const purple = document.getElementById('purple').onclick= changeColor('purple')
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom chai our code</title>
+  </head>
+  <body style="background-color: #212121; color: #ffff"></body>
+
+  <script>
+    const div = document.createElement("div");
+    console.log(div);
+    div.id = Math.floor(Math.random() * 10 + 2);
+    div.className = "div create";
+    div.setAttribute("Title:", "div is very important");
+    div.style.color = "red";
+    div.style.padding = "10px";
+    const wrap = document.createTextNode("Input show");
+    div.appendChild(wrap);
+    document.body.appendChild(div);
+  </script>
+</html>
