@@ -1,40 +1,38 @@
 // data divided into two part permitive non permitive
-// primitive 
+// primitive
 //7types: string, number , boolean , null , undefined, symbol , bigInt
-// symbol used is a uniqueness 
+// symbol used is a uniqueness
 
 // reference or  non permitive
 // array , objects , functions
 
-const score = 100
+const score = 100;
 console.log(score);
 // not define javascript
- const id = Symbol("123")
-const anotherId = Symbol('123')
+const id = Symbol("123");
+const anotherId = Symbol("123");
 if (id === anotherId) {
-    console.log('depend on answer')
+  console.log("depend on answer");
 }
 // false
-console.log(id)
-console.log(anotherId)
-let bigNumber = 12365488955n
+console.log(id);
+console.log(anotherId);
+let bigNumber = 12365488955n;
 // last ma n is an example of bigint
-console.log(bigNumber)
-const heros = ["shan","ali"]
+console.log(bigNumber);
+const heros = ["shan", "ali"];
 {
-name: "hitest"
-age: "24"
+  name: "hitest";
+  age: "24";
 }
 
 //Function(){} written in here
 
 //non permitive data type is output is function
 
-
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// stack memory use perimitve,  heap non permitive 
-
+// stack memory use perimitve,  heap non permitive
 
 // stack man copy or heap ma reference
 
@@ -55,11 +53,10 @@ useTwo.email = "s11@gmail.com"
 console.log(useOne.email)
 console.log(useTwo.email) */
 
-
 let googleId = {
-    id : ' googlevicky.com'
-}
-let googleIdtwo = googleId
-googleIdtwo.id = 'googlesam.com'
+  id: " googlevicky.com",
+};
+let googleIdtwo = googleId;
+googleIdtwo.id = "googlesam.com";
 console.log(googleIdtwo);
 console.log(googleId);
